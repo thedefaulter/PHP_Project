@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	scroll-behavior: smooth;
+	font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://i.postimg.cc/YjcJg24M/aa.jpg);
+	height: 110vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.nav-area li a:hover {
+	content: "";
+	border-bottom: 2px solid yellow;
+	transition: all 0.3s ease-in-out;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	width: 100%;
+	padding: 15px 0;
+}
+.welcome-text {
+	position: absolute;
+	width: 1000px;
+	height: 300px;
+	margin: 20% 10%;
+}
+.welcome-text h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+.welcome-text h1 span {
+	/*color: #00fecb;*/
+	color: yellow;
+}
+.welcome-text a {
+	
+}
+.welcome-text button a:hover {
+	color: yellow;
+}
+.welcome-text button{
+	border: 1px solid #fff;
+	padding: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+	background-color: black;
+	transition-delay: 0.1s;
+}
+.img-slideshow{
+    float: right;
+    margin-right: -550px;
+    margin-top: 200px;
+    width: 400px;
+    height: 410px;
+}
+.img-slideshow{
+    background-image: url("../images/kedarnathnew.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: slider 10s infinite linear;
+}
+@keyframes slider{
+	0%{background-image: url("../images/kedarnathnew.jpg");}
+	30%{background-image: url("../images/dehradunnew.jpg");}
+	60%{background-image: url("../images/rishikeshnew.jpg");}
+	90%{background-image: url("../images/manalinew.jpg");}
+}
+.slideshow img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+.slideshow img{
+    width: 100%;
+}
+.img-slideshow button{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 15px;
+    position: relative;
+    top: 350px;
+    left: 280px;
+}
+.slideshow .heading{
+    color: black;
+    font-size: 30px;
+}
+.slideshow .heading button:hover{
+	cursor: pointer;
+	/*background-color: black;*/
+	color: white;
+	border-radius: 30px;
+	transition: 1.5s;
+}
+button a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/*resposive*/
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.logo {
+		float: none;
+		width: 50%;
+		text-align: center;
+		margin: auto;
+	}
+	img {
+		width: 100%;
+	}
+	.nav-area {
+		float: none;
+		margin-top: 0;
+	}
+	.nav-area li a {
+		padding: 5px;
+		font-size: 11px;
+	}
+	.nav-area {
+		text-align: center;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}

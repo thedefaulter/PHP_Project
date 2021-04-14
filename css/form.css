@@ -1,0 +1,123 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	background-image: url(../maldives.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header a{
+	text-decoration: none;
+	color: white;
+}
+.header a:hover{
+	cursor: pointer;
+	color: white;
+}
+.header{
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+	height: 1.9cm;
+}
+.header h3{
+	font-size: 25px;
+	position: absolute;
+	top: 20px;
+	left: 255px;
+
+}
+.header img{
+	position: relative;
+    left: 200px;
+    top: 10px;
+}
+.header ul{
+	position: relative;
+	right: 120px;
+	float: right;
+	text-decoration: none;
+	display: inline-flex;
+	list-style-type: none;
+}
+.header ul li{
+	font-family: Roboto;
+	padding-right: 65px;
+	position: relative;
+	top: 25px;
+}
+.form{
+	margin: auto;
+	position: relative;
+	top: 65px;
+	width: 20%;
+	height: 35rem;
+	/*background-color: rgb(0,0,0,0.8);*/
+	background-color: rgb(255,255,255,0.8);
+	padding-top: 25px;
+	text-align: center;
+	box-sizing: border-box;
+}
+form input{
+	border: 0px;
+	width: 250px;
+	color: black;
+	padding: 15px;
+	background: none;
+	border-bottom: 2px solid black;
+}
+form select{
+	border: 0px;
+	width: 250px;
+	color: black;
+	padding: 15px;
+	background: none;
+	border-bottom: 2px solid black;
+}
+input:focus::placeholder{
+	position: relative;
+	top: -15px;
+}
+::placeholder {
+	transition-delay: 3s;
+    color: black;
+}
+input:focus{
+    outline: none !important;
+}
+.btn{
+	width: 92%;
+	padding: 12px;
+    font-size: 25px;
+    color: white;
+    border: none;
+    background-color: rgb(218, 109, 150);
+    
+}
+.btn:hover{
+	background-color: white;
+	color: black;
+	transition: 0.5s;
+}
+.footer{
+	width: 100%;
+	position: relative;
+	height: 15rem;
+	top: 225px;
+	background-color: #272727;
+	color: white;
+}
+.b1{
+	width: 150px;
+	position: relative;
+	top: 15px;
+	text-align: center;
+	left: 280px;
+}
+.b2{
+	width: 150px;
+	position: relative;
+	top: -59px;
+	text-align: center;
+	left: 480px;
+}
